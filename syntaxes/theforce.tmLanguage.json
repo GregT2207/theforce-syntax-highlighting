@@ -40,64 +40,188 @@
 		  }
 		]
 	  },
+	  "boolean": {
+		"patterns": [
+			{
+				"name": "constant.language.theforce.true",
+				"match": "(From a certain point of view\\.)"
+			},
+			{
+				"name": "constant.language.theforce.false",
+				"match": "(That's impossible\\!)"
+			}
+		]
+	  },
 	  "commands": {
 		"patterns": [
-		  {
-			"name": "keyword.control.theforce.main",
-			"match": "(Do it!|May The Force be with you\\.)"
-		  },
-		  {
-			"name": "keyword.control.theforce.print",
-			"match": "(The Sacred Jedi Texts!)"
-		  },
-		  {
-			"name": "keyword.control.theforce.declare",
-			"match": "(Size matters not\\.|Yoda\\. You seek Yoda\\.|I am the Senate!|Who, mesa?)"
-		  },
-		  {
-			"name": "keyword.control.theforce.boolean",
-			"match": "(From a certain point of view\\.|That's impossible!)"
-		  },
-		  {
-			"name": "keyword.control.theforce.function",
-			"match": "(This is where the fun begins\\.|You cannot escape your destiny\\.)"
-		  },
-		  {
-			"name": "keyword.control.theforce.function.parameters",
-			"match": "(Now, that's a name I've not heard in a long time\\. A long time\\.)"
-		  },
-		  {
-			"name": "keyword.control.theforce.function.void",
-			"match": "(It's a trap!)"
-		  },
-		  {
-			"name": "keyword.control.theforce.function.return",
-			"match": "(You're all clear, kid\\. Now let's blow this thing and go home\\.)"
-		  },
-		  {
-			"name": "keyword.control.theforce.assign",
-			"match": "(What a piece of junk!|Many Bothans died to bring us this information\\.|The garbage will do\\.|I am your father\\.)"
-		  },
-		  {
-			"name": "keyword.control.theforce.call",
-			"match": "(I have a bad feeling about this\\.)"
-		  },
-		  {
-			"name": "keyword.control.theforce.arguments",
-			"match": "(I'll try spinning, that's a good trick\\.)"
-		  },
-		  {
-			"name": "keyword.control.theforce.operators",
-			"match": "(Your lightsabers will make a fine addition to my collection\\.|Proceed with the countdown\\.|There's too many of them!|Not to worry, we are still flying half a ship\\.|Unlimited power!|Never tell me the odds!|I am a Jedi, like my father before me\\.|Impressive\\. Most impressive\\.|There's always a bigger fish\\.|Always with you it cannot be done\\.|There is another\\.|As you wish\\.|Move along\\. Move along\\.)"
-		  },
-		  {
-			"name": "keyword.control.theforce.flow",
-			"match": "(Here we go again\\.|Let the past die\\.|Do, or do not\\. There is no try\\.|These aren't the droids you're looking for\\.|You have failed me for the last time\\.|For over a thousand generations\\.|Let the Wookiee win\\.|It is clear to me now the Republic no longer functions\\.)"
-		  },
-		  {
-			"name": "keyword.control.theforce.read",
-			"match": "(Now this is podracing!|Looking\\? Found someone, you have, I would say\\.|I hope you know what you're doing\\.)"
-		  }
+			{
+				"name": "keyword.control.theforce.beginMain",
+				"match": "(Do it\\!)"
+			},
+			{
+				"name": "keyword.control.theforce.endMain",
+				"match": "(May The Force be with you\\.)"
+			},
+			{
+				"name": "keyword.other.theforce.print",
+				"match": "(The Sacred Jedi Texts\\!)"
+			},
+			{
+				"name": "storage.type.theforce.declareFloat",
+				"match": "(Size matters not\\.)"
+			},
+			{
+				"name": "storage.type.theforce.declareString",
+				"match": "(Yoda\\. You seek Yoda\\.)"
+			},
+			{
+				"name": "storage.type.theforce.declareBool",
+				"match": "(I am the Senate\\!)"
+			},
+			{
+				"name": "storage.modifier.theforce.setInitialValue",
+				"match": "(Who, mesa\\?)"
+			},
+			{
+				"name": "storage.modifier.theforce.declareFunction",
+				"match": "(This is where the fun begins\\.)"
+			},
+			{
+				"name": "variable.parameter.theforce.functionParameters",
+				"match": "(Now, that's a name I've not heard in a long time\\. A long time\\.)"
+			},
+			{
+				"name": "storage.type.theforce.void",
+				"match": "(It's a trap\\!)"
+			},
+			{
+				"name": "keyword.control.theforce.return",
+				"match": "(You're all clear, kid\\. Now let's blow this thing and go home\\.)"
+			},
+			{
+				"name": "keyword.control.theforce.endFunctionDeclaration",
+				"match": "(You cannot escape your destiny\\.)"
+			},
+			{
+				"name": "storage.modifier.theforce.assignVariable",
+				"match": "(What a piece of junk\\!)"
+			},
+			{
+				"name": "storage.modifier.theforce.assignVariableFromFunctionCall",
+				"match": "(Many Bothans died to bring us this information\\.)"
+			},
+			{
+				"name": "storage.modifier.theforce.endAssignVariable",
+				"match": "(The garbage will do\\.)"
+			},
+			{
+				"name": "storage.modifier.theforce.setValue",
+				"match": "(I am your father\\.)"
+			},
+			{
+				"name": "keyword.control.theforce.callFunction",
+				"match": "(I have a bad feeling about this\\.)"
+			},
+			{
+				"name": "variable.parameter.theforce.passArgument",
+				"match": "(I'll try spinning, that's a good trick\\.)"
+			},
+			{
+				"name": "keyword.operator.theforce.add",
+				"match": "(Your lightsabers will make a fine addition to my collection\\.)"
+			},
+			{
+				"name": "keyword.operator.theforce.subtract",
+				"match": "(Proceed with the countdown\\.)"
+			},
+			{
+				"name": "keyword.operator.theforce.multiply",
+				"match": "(There's too many of them\\!)"
+			},
+			{
+				"name": "keyword.operator.theforce.divide",
+				"match": "(Not to worry, we are still flying half a ship\\.)"
+			},
+			{
+				"name": "keyword.operator.theforce.exponent",
+				"match": "(Unlimited power\\!)"
+			},
+			{
+				"name": "keyword.operator.theforce.modulus",
+				"match": "(Never tell me the odds\\!)"
+			},
+			{
+				"name": "keyword.operator.theforce.equal",
+				"match": "(I am a Jedi, like my father before me\\.)"
+			},
+			{
+				"name": "keyword.operator.theforce.greaterThan",
+				"match": "(Impressive\\. Most impressive\\.)"
+			},
+			{
+				"name": "keyword.operator.theforce.lessThan",
+				"match": "(There's always a bigger fish\\.)"
+			},
+			{
+				"name": "keyword.operator.theforce.not",
+				"match": "(Always with you it cannot be done\\.)"
+			},
+			{
+				"name": "keyword.operator.theforce.or",
+				"match": "(There is another\\.)"
+			},
+			{
+				"name": "keyword.operator.theforce.and",
+				"match": "(As you wish\\.)"
+			},
+			{
+				"name": "keyword.operator.theforce.noop",
+				"match": "(Move along\\. Move along\\.)"
+			},
+			{
+				"name": "keyword.control.theforce.while",
+				"match": "(Here we go again\\.)"
+			},
+			{
+				"name": "keyword.control.theforce.endWhile",
+				"match": "(Let the past die\\.)"
+			},
+			{
+				"name": "keyword.control.theforce.if",
+				"match": "(Do, or do not\\. There is no try\\.)"
+			},
+			{
+				"name": "keyword.control.theforce.else",
+				"match": "(These aren't the droids you're looking for\\.)"
+			},
+			{
+				"name": "keyword.control.theforce.endIf",
+				"match": "(You have failed me for the last time\\.)"
+			},
+			{
+				"name": "keyword.control.theforce.for",
+				"match": "(For over a thousand generations\\.)"
+			},
+			{
+				"name": "keyword.control.theforce.forStart",
+				"match": "(Let the Wookiee win\\.)"
+			},
+			{
+				"name": "keyword.control.theforce.endFor",
+				"match": "(It is clear to me now the Republic no longer functions\\.)"
+			},
+			{
+				"name": "support.function.theforce.readFloat",
+				"match": "(Now this is podracing\\!)"
+			},
+			{
+				"name": "support.function.theforce.readString",
+				"match": "(Looking\\? Found someone, you have, I would say\\.)"
+			},
+			{
+				"name": "support.function.theforce.readBoolean",
+				"match": "(I hope you know what you're doing\\.)"
+			}
 		]
 	  }
 	}
