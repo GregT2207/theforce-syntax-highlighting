@@ -1,0 +1,25 @@
+{
+  "name": "theforce-syntax-highlighting",
+  "displayName": "TheForce Syntax Highlighting",
+  "description": "To be Jedi is to face the truth, and choose. Give off light, or darkness, Padawan.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "theforce",
+      "aliases": ["TheForce", "theforce"],
+      "extensions": [".force"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "theforce",
+      "scopeName": "source.force",
+      "path": "./syntaxes/theforce.tmLanguage.json"
+    }]
+  }
+}
