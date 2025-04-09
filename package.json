@@ -3,6 +3,7 @@
   "displayName": "TheForce Syntax Highlighting",
   "description": "To be Jedi is to face the truth, and choose. Give off light, or darkness, Padawan.",
   "version": "0.0.1",
+  "publisher": "theforce",
   "engines": {
     "vscode": "^1.99.0"
   },
