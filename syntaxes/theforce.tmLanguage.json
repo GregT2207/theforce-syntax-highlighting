@@ -3,10 +3,10 @@
 	"name": "TheForce",
 	"scopeName": "source.force",
 	"patterns": [
+	  { "include": "#commands" },
 	  { "include": "#comments" },
 	  { "include": "#strings" },
-	  { "include": "#numbers" },
-	  { "include": "#commands" }
+	  { "include": "#numbers" }
 	],
 	"repository": {
 	  "comments": {
@@ -44,61 +44,61 @@
 		"patterns": [
 		  {
 			"name": "keyword.control.theforce.main",
-			"match": "^\\s*(Do it!|May The Force be with you\\.)\\s*$"
+			"match": "(Do it!|May The Force be with you\\.)"
 		  },
 		  {
 			"name": "keyword.control.theforce.print",
-			"match": "^\\s*(The Sacred Jedi Texts!)\\s*$"
+			"match": "(The Sacred Jedi Texts!)"
 		  },
 		  {
 			"name": "keyword.control.theforce.declare",
-			"match": "^\\s*(Size matters not\\.|Yoda\\. You seek Yoda\\.|I am the Senate!|Who, mesa?)\\s*$"
+			"match": "(Size matters not\\.|Yoda\\. You seek Yoda\\.|I am the Senate!|Who, mesa?)"
 		  },
 		  {
 			"name": "keyword.control.theforce.boolean",
-			"match": "^\\s*(From a certain point of view\\.|That's impossible!)\\s*$"
+			"match": "(From a certain point of view\\.|That's impossible!)"
 		  },
 		  {
 			"name": "keyword.control.theforce.function",
-			"match": "^\\s*(This is where the fun begins\\.|You cannot escape your destiny\\.)\\s*$"
+			"match": "(This is where the fun begins\\.|You cannot escape your destiny\\.)"
 		  },
 		  {
 			"name": "keyword.control.theforce.function.parameters",
-			"match": "^\\s*(Now, that's a name I've not heard in a long time\\. A long time\\.)\\s*$"
+			"match": "(Now, that's a name I've not heard in a long time\\. A long time\\.)"
 		  },
 		  {
 			"name": "keyword.control.theforce.function.void",
-			"match": "^\\s*(It's a trap!)\\s*$"
+			"match": "(It's a trap!)"
 		  },
 		  {
 			"name": "keyword.control.theforce.function.return",
-			"match": "^\\s*(You're all clear, kid\\. Now let's blow this thing and go home\\.)\\s*$"
+			"match": "(You're all clear, kid\\. Now let's blow this thing and go home\\.)"
 		  },
 		  {
 			"name": "keyword.control.theforce.assign",
-			"match": "^\\s*(What a piece of junk!|Many Bothans died to bring us this information\\.|The garbage will do\\.|I am your father\\.)\\s*$"
+			"match": "(What a piece of junk!|Many Bothans died to bring us this information\\.|The garbage will do\\.|I am your father\\.)"
 		  },
 		  {
 			"name": "keyword.control.theforce.call",
-			"match": "^\\s*(I have a bad feeling about this\\.)\\s*$"
+			"match": "(I have a bad feeling about this\\.)"
 		  },
 		  {
 			"name": "keyword.control.theforce.arguments",
-			"match": "^\\s*(I'll try spinning, that's a good trick\\.)\\s*$"
+			"match": "(I'll try spinning, that's a good trick\\.)"
 		  },
 		  {
 			"name": "keyword.control.theforce.operators",
-			"match": "^\\s*(Your lightsabers will make a fine addition to my collection\\.|Proceed with the countdown\\.|There's too many of them!|Not to worry, we are still flying half a ship\\.|Unlimited power!|Never tell me the odds!|I am a Jedi, like my father before me\\.|Impressive\\. Most impressive\\.|There's always a bigger fish\\.|Always with you it cannot be done\\.|There is another\\.|As you wish\\.|Move along\\. Move along\\.)\\s*$"
+			"match": "(Your lightsabers will make a fine addition to my collection\\.|Proceed with the countdown\\.|There's too many of them!|Not to worry, we are still flying half a ship\\.|Unlimited power!|Never tell me the odds!|I am a Jedi, like my father before me\\.|Impressive\\. Most impressive\\.|There's always a bigger fish\\.|Always with you it cannot be done\\.|There is another\\.|As you wish\\.|Move along\\. Move along\\.)"
 		  },
 		  {
 			"name": "keyword.control.theforce.flow",
-			"match": "^\\s*(Here we go again\\.|Let the past die\\.|Do, or do not\\. There is no try\\.|These aren't the droids you're looking for\\.|You have failed me for the last time\\.|For over a thousand generations\\.|Let the Wookiee win\\.|It is clear to me now the Republic no longer functions\\.)\\s*$"
+			"match": "(Here we go again\\.|Let the past die\\.|Do, or do not\\. There is no try\\.|These aren't the droids you're looking for\\.|You have failed me for the last time\\.|For over a thousand generations\\.|Let the Wookiee win\\.|It is clear to me now the Republic no longer functions\\.)"
 		  },
 		  {
 			"name": "keyword.control.theforce.read",
-			"match": "^\\s*(Now this is podracing!|Looking\\? Found someone, you have, I would say\\.|I hope you know what you're doing\\.)\\s*$"
+			"match": "(Now this is podracing!|Looking\\? Found someone, you have, I would say\\.|I hope you know what you're doing\\.)"
 		  }
 		]
 	  }
 	}
-  }
+}
